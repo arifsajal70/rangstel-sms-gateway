@@ -1,0 +1,32 @@
+{
+    "name": "arifsajal/rangstel-sms-gateway",
+    "description": "Rangstel SMS Gateway",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ariful Islam",
+            "email": "sajalarifulislam@gmail.com",
+            "homepage": "https://github.com/arifsajal70"
+        }
+    ],
+    "homepage": "https://github.com/arifsajal70/rangstel-sms-gateway",
+    "keywords": ["Laravel", "RangstelSmsGateway"],
+    "require": {
+        "guzzlehttp/guzzle": "^6.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Arifsajal\\RangstelSmsGateway\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Arifsajal\\RangstelSmsGateway\\Providers\\RangstelServiceProvider"
+            ],
+            "aliases": {
+                "RangstelSmsGateway": "Arifsajal\\RangstelSmsGateway\\Facades\\Rangstel"
+            }
+        }
+    }
+}
